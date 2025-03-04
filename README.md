@@ -10,14 +10,21 @@ cd cdnx-2
 npm install
 ```
 
-2. **Create .env**
+2. **Fill ecosystem.config.js file with the appropriate configurations**
+
+3. **Create .env**
 ```
 cp .env.example .env
 ```
 
-3. **Populate .env**: Create database connection string using database credentials
+4. **Populate .env**: Create database connection string using database credentials
 
-4. **Start the server**
+5. **Seed database**
+```
+npm run seed
+```
+
+5. **Start the server**
 #### Development
 ```
 npm run dev
@@ -27,5 +34,3 @@ npm run dev
 npm run build
 npm run start
 ```
-
-5. **Seed database**: Navigate to https://[host]/seed
