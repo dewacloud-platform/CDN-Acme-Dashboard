@@ -24,7 +24,7 @@ cp .env.example .env
 npm run seed
 ```
 
-5. **Start the server**
+6. **Start the server**
 #### Development
 ```
 npm run dev
@@ -34,3 +34,7 @@ npm run dev
 npm run build
 npm run start
 ```
+
+User credential:
+Email: user@nextmail.com
+Password: 123456

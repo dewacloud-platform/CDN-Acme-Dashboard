@@ -102,16 +102,19 @@ async function seedRevenue() {
 }
 
 async function main() {
-  await sql.begin((sql) => [
-    seedUsers(),
-    seedCustomers(),
-    seedInvoices(),
-    seedRevenue(),
-  ]);
+  try {
+    await sql.begin((sql) => [
+      seedUsers(),
+      seedCustomers(),
+      seedInvoices(),
+      seedRevenue(),
+    ]);
+    console.log("database seeded successfully");
+  } catch (err) {
+    console.error("database seeding error", err);
+  } finally {
+    await sql.end(); // Close the connection
+  }
 }
 
-main().then(() => {
-  console.log("database seeded successfully")
-}).catch(err => {
-  console.error("database seeding error", err)
-})
+main()
