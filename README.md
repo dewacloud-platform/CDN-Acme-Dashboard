@@ -6,7 +6,7 @@ Original source: [Next Learn](https://nextjs.org/learn)
 
 1. **Install dependencies**
 ```
-cd cdnx-2
+cd CDN-Acme-Dashboard
 npm install
 ```
 
