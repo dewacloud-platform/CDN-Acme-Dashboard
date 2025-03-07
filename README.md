@@ -7,7 +7,7 @@ Original source: [Next Learn](https://nextjs.org/learn)
 1. **Install dependencies**
 ```
 cd CDN-Acme-Dashboard
-npm install
+npm install --omit=optional
 ```
 
 2. **Fill ecosystem.config.js file with the appropriate configurations**
